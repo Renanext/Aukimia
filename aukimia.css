@@ -1,0 +1,100 @@
+body {
+    background-image: url('fundoAukimia.png'); /* Define a imagem de fundo */
+    background-size: cover; /* Faz com que a imagem cubra toda a área do fundo */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.logo {
+    margin-top: 20px;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.button {
+    display: inline-block;
+    width: 200px;
+    padding: 15px 20px; /* Ajusta o padding para melhor proporção */
+    font-size: 16px;
+    cursor: pointer;
+    background-color: gold; /* Cor de fundo amarela */
+    border: 2px solid brown; /* Borda marrom */
+    border-radius: 25px; /* Aumenta o raio da borda para botões mais arredondados */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), /* Sombra mais pronunciada para efeito 3D */
+                0 2px 4px rgba(0, 0, 0, 0.15); /* Segunda sombra para profundidade */
+    transition: all 0.3s ease; /* Transição suave para efeitos de hover */
+    text-align: center; /* Alinha o texto ao centro */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: black; /* Cor do texto dos botões */
+}
+
+.button:hover {
+    background-color: darkgoldenrod; /* Cor de fundo ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25), /* Aumenta a sombra para efeito de elevação */
+                0 3px 6px rgba(0, 0, 0, 0.20); /* Segunda sombra aumentada */
+    transform: translateY(-4px); /* Eleva o botão um pouco mais */
+}
+
+.button:active {
+    background-color: orange; /* Cor de fundo ao clicar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.20), /* Diminui a sombra ao clicar */
+                0 1px 4px rgba(0, 0, 0, 0.15); /* Segunda sombra ajustada */
+    transform: translateY(0); /* Remove o efeito de elevação ao clicar */
+}
+
+/* Estilos para a caixa de login */
+.login-container {
+    width: 300px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: #fff;
+    text-align: center;
+    position: absolute; /* Posiciona o contêiner de login */
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta o alinhamento */
+}
+
+/* Estilos para os campos de entrada */
+.login-container input {
+    width: calc(100% - 20px); /* Ajusta a largura para incluir o padding */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Inclui o padding e a borda no tamanho total */
+}
+
+/* Estilos para o botão de login */
+.login-container button {
+    width: calc(100% - 20px); /* Ajusta a largura para incluir o padding */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    box-sizing: border-box; /* Inclui o padding e a borda no tamanho total */
+}
+
+/* Estilo para o botão de login ao passar o mouse */
+.login-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para esconder elementos */
+.hidden {
+    display: none;
+}

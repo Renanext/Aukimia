@@ -1,0 +1,97 @@
+/* Estilo do corpo da página */
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('fundoAukimia.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Alinhamento ao topo da tela */
+    min-height: 100vh;
+    overflow-y: auto; /* Permite rolagem vertical se necessário */
+    overflow-x: auto; /* Permite rolagem horizontal se necessário */
+}
+
+/* Estilo da logo */
+.logo {
+    max-width: 120px; /* Diminuir o tamanho da logo */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Centraliza a imagem horizontalmente */
+}
+
+/* Estilo do container do formulário */
+.form-container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+/* Estilo do cabeçalho do formulário */
+.form-container h2 {
+    margin-bottom: 20px;
+}
+
+/* Estilo dos grupos de formulário */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Estilo das labels dos campos do formulário */
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Estilo das labels principais em negrito */
+.bold-label {
+    font-weight: bold; /* Deixa as labels principais em negrito */
+}
+
+/* Estilo dos campos de entrada e seleção */
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilo dos botões */
+.form-group button {
+    padding: 10px 20px;
+    background-color: #FFDB58; /* Amarelo mostarda */
+    border: 2px solid #8B4513; /* Marrom */
+    border-radius: 15px; /* Bordas arredondadas */
+    color: #8B4513; /* Marrom */
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Estilo dos grupos de rádio */
+.radio-group {
+    display: flex;
+    flex-direction: column; /* Alinha os itens em coluna */
+    align-items: flex-start; /* Alinha os itens à esquerda */
+}
+
+/* Estilo das labels dos grupos de rádio não em negrito */
+.radio-group label {
+    display: flex;
+    align-items: center;
+    margin: 5px 0; /* Margem vertical para espaçar os itens */
+    font-weight: normal; /* Remove o negrito */
+}
+
+.radio-group input {
+    margin-right: 5px; /* Espaço entre o input e o texto */
+}

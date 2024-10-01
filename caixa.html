@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frente de Caixa</title>
+    <link rel="stylesheet" href="caixa.css">
+</head>
+<body>
+    <!-- Container de login -->
+    <div class="login-container" id="login-container">
+        <a href="aukimia(home).html" id="logoLink">
+            <img src="logo aukimia.png" alt="Logo" class="logo">
+        </a>
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Nome de usuário" required>
+            <input type="password" id="password" placeholder="Senha" required>
+            <button type="submit">Entrar</button>
+            <p id="error" style="color: red; display: none;">Nome de usuário ou senha incorretos!</p>
+        </form>
+    </div>
+
+    <!-- Container de caixa -->
+    <div class="container hidden" id="caixa-container">
+        <!-- Logo acima do cabeçalho -->
+        <div class="logo-container">
+            <a href="aukimia(home).html"><img src="logo aukimia.png" alt="Logo do Caixa" class="logo-caixa"></a>
+        </div>
+
+        <div class="header">
+            <div>Operador: Aukimia</div>
+            <div>Cliente:</div>
+            <div>Vendedor:</div>
+            <div>Horário: <span id="horario">15:25:18</span></div>
+        </div>
+
+        <button class="add-item-button" onclick="addItem()">Adicionar Item</button>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Item Código</th>
+                    <th>Descrição</th>
+                    <th>Qtd.</th>
+                    <th>Vl. Unit.</th>
+                    <th>Vl. Item (R$)</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="items">
+                <!-- Itens serão adicionados aqui -->
+            </tbody>
+        </table>
+
+        <div class="total">
+            <div>Volumes: <span id="total-volumes">0</span></div>
+            <div>Quantidade: <span id="total-qty">0</span></div>
+            <div>Valor Total: <span id="total-value">0,00</span></div>
+        </div>
+
+        <div class="footer">
+            <div>Troco: <input type="text" id="change" placeholder="0,00" /></div>
+        </div>
+    </div>
+
+    <script src="caixa.js"></script>
+</body>
+</html>
+

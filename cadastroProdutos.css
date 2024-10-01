@@ -1,0 +1,109 @@
+/* Mantém a mesma estrutura do CSS padrão */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('fundoAukimia.png'); /* Mantenha a imagem de fundo do padrão */
+    background-size: cover; /* Ajusta a imagem para cobrir o fundo */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    height: 100vh; /* Ajusta a altura para a altura da tela */
+    margin: 0;
+    overflow: hidden; /* Remove a rolagem */
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    color: #333; /* Cor do texto */
+}
+
+/* Estilo da logo */
+.logo {
+    margin: 0; /* Remove a margem ao redor da logo */
+    padding: 0; /* Remove o padding ao redor da logo */
+    display: block; /* Garante que a imagem se comporte como bloco */
+    max-width: 150px; /* Ajusta o tamanho máximo da logo */
+    height: auto; /* Mantém a proporção da logo */
+}
+
+/* Estilo do contêiner do formulário */
+.form-container {
+    background: rgba(255, 255, 255, 0.8); /* Fundo semitransparente */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 700px; /* Reduz a largura máxima */
+    width: 90%; /* Ajusta a largura para 90% da tela */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+    display: flex;
+    flex-direction: column; /* Organiza os itens verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    margin-top: 20px; /* Ajusta a margem superior para subir o quadro */
+}
+
+/* Estilo do título dentro do contêiner do formulário */
+.form-container h1 {
+    margin-bottom: 10px; /* Espaço reduzido abaixo do título para aproximar a tabela */
+    text-align: center; /* Centraliza o título */
+    font-size: 22px; /* Ajusta o tamanho da fonte */
+}
+
+/* Estilo dos grupos do formulário */
+.form-group {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Estilo das labels dos campos do formulário */
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Deixa as labels em negrito */
+}
+
+/* Estilo dos campos de entrada e textarea */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #b8860b; /* Borda dourada escura */
+    border-radius: 5px;
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+/* Estilo do botão */
+.form-group button {
+    padding: 10px 20px;
+    background-color: #b8860b; /* Cor de fundo dourada escura */
+    border: none;
+    border-radius: 5px; /* Bordas arredondadas */
+    color: white; /* Cor do texto do botão */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.form-group button:hover {
+    background-color: #d4af37; /* Cor de fundo dourado mais claro ao passar o mouse */
+    color: #fff; /* Cor do texto ao passar o mouse */
+}
+
+/* Foco em campos do formulário */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #d4af37; /* Cor da borda ao focar no campo */
+    outline: none; /* Remove a borda padrão de foco */
+    box-shadow: 0 0 5px rgba(212, 175, 55, 0.5); /* Sombra leve para foco */
+}
+
+/* Estilo da tabela */
+.table {
+   

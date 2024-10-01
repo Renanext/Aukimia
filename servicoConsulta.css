@@ -1,0 +1,146 @@
+/* Mantém a mesma estrutura do CSS padrão */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configurações gerais do body */
+body {
+    background-image: url('fundoAukimia.png'); /* Mantenha a imagem de fundo do padrão */
+    background-size: cover; /* Ajusta a imagem para cobrir o fundo */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: flex-start; /* Mantém o conteúdo no topo para permitir rolagem */
+    min-height: 100vh; /* Garante que a altura mínima seja a altura da tela */
+    margin: 0;
+    overflow-y: auto; /* Permite rolagem vertical se necessário */
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    color: #333; /* Cor do texto */
+}
+
+/* Estilo da logo */
+.logo {
+    margin: 20px 0; /* Adiciona margem superior e inferior para espaçar a logo e o conteúdo abaixo */
+    padding: 0; /* Remove o padding ao redor da logo */
+    display: block; /* Garante que a imagem se comporte como bloco */
+    max-width: 150px; /* Ajusta o tamanho máximo da logo */
+    height: auto; /* Mantém a proporção da logo */
+}
+
+/* Estilo do contêiner do formulário */
+.form-container {
+    background: rgba(255, 255, 255, 0.8); /* Fundo semitransparente */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Largura máxima do formulário */
+    width: 90%; /* Ajusta a largura para 90% da tela */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+    margin: 20px auto; /* Centraliza o formulário e adiciona margem vertical */
+}
+
+/* Estilo do título dentro do contêiner do formulário */
+.form-container h1 {
+    margin-bottom: 20px;
+    text-align: center; /* Centraliza o título */
+    font-size: 22px; /* Ajusta o tamanho da fonte */
+}
+
+/* Estilo dos grupos do formulário */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Estilo das labels dos campos do formulário */
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+/* Estilo dos campos de entrada e textarea */
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+/* Estilo do botão */
+.form-group button {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Cor do fundo do botão */
+    border: none;
+    border-radius: 5px; /* Bordas arredondadas */
+    color: white; /* Cor do texto do botão */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.form-group button:hover {
+    background-color: #45a049; /* Cor de fundo ao passar o mouse */
+    color: #fff; /* Cor do texto ao passar o mouse */
+}
+
+/* Estilos adicionais */
+h2 {
+    margin-bottom: 15px;
+}
+
+#consultations-list {
+    margin-top: 20px;
+}
+
+.calendar-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    width: 80%;
+    margin: auto;
+    padding: 0; /* Remove o preenchimento */
+    overflow: hidden; /* Evita que o calendário ultrapasse os limites */
+}
+
+/* Estiliza o calendário */
+#calendar {
+    width: 100%; /* Ajusta a largura do calendário ao contêiner */
+    max-width: 1200px; /* Ajuste o tamanho máximo conforme necessário */
+    height: auto; /* Mantém a altura automática */
+    margin: 0; /* Remove as margens */
+    padding: 0; /* Remove o preenchimento */
+    background-color: #ffffff; /* Fundo branco para o calendário */
+    border-radius: 8px; /* Bordas arredondadas */
+    border: 1px solid #ddd; /* Borda cinza clara */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+/* Estilo dos botões de navegação do calendário */
+.fc-prev-button, .fc-next-button, .fc-prev-year-button, .fc-next-year-button {
+    background-color: #4CAF50; /* Cor de fundo dos botões */
+    color: white; /* Cor do texto dos botões */
+    border: none; /* Remove bordas */
+    padding: 8px 12px; /* Espaçamento interno */
+    border-radius: 4px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro */
+    font-size: 14px; /* Tamanho da fonte */
+    transition: background-color 0.3s; /* Transição suave para o hover */
+}
+
+.fc-prev-button:hover, .fc-next-button:hover, .fc-prev-year-button:hover, .fc-next-year-button:hover {
+    background-color: #45a049; /* Cor de fundo ao passar o mouse */
+}
+
+/* Foco em campos do formulário */
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #4CAF50; /* Cor da borda ao focar no campo */
+    outline: none; /* Remove a borda padrão de foco */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Sombra leve para foco */
+}
